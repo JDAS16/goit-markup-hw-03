@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
     />
@@ -19,46 +18,48 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>INDEX</title>
   </head>
   <body>
-    <div class="container">
     <!--Encabezado-->
     <header class="first">
-      <nav class="navigation">
-      <a class="link title" href="#">webestudio</a>
-        <ul class="menu-submenu">
-          <li class="one" >
-            <a class="link text-direction active" href="./index.html"
-              >Estudio</a
+      <div class="container header-container">
+        <nav class="navigation">
+          <a class="link title" href="#">webestudio</a>
+          <ul class="menu-submenu">
+            <li class="one">
+              <a class="link text-direction active" href="./index.html"
+                >Estudio</a
+              >
+            </li>
+            <li class="two">
+              <a class="link text-direction" href="./portfolio.html"
+                >Portafolio</a
+              >
+            </li>
+            <li class="three">
+              <a class="link text-direction" href="#">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="information">
+          <li class="four">
+            <a
+              class="link info text-direction head-information"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="two">
-            <a class="link text-direction" href="./portfolio.html"
-              >Portafolio</a
+          <li class="five">
+            <a
+              class="link info text-direction head-information"
+              href="tel:+52 55 5529 6000"
+              >+52 55 5529 6000</a
             >
-          </li>
-          <li class="three">
-            <a class="link text-direction" href="#">Contactos</a>
           </li>
         </ul>
-      </nav>
-      <ul class="information">
-        <li class="four">
-          <a
-            class="link info text-direction head-information"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="five">
-          <a
-            class="link info text-direction head-information"
-            href="tel:+52 55 5529 6000"
-            >+52 55 5529 6000</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!--Contenido de articulo-->
     <main>
@@ -70,81 +71,116 @@
       </section>
       <!--Secion de articulos-->
       <div class="intermediate-divider">
-      <section class="detail-two">
-        <ul>
-          <li class="detailed-list">
-            <h3 class="six intermediate">Atencion a los detalles</h3>
-            <p class="paragraph middle-text">
-              Nos adentramos en todos los detalles y procesos de su negocio,
-              para así desarrollar una solución a su medida.
-            </p>
-          </li>
-          <li class="detailed-list">
-            <h3 class="seven intermediate">Puntualidad</h3>
-            <p class="paragraph-two middle-text">
-              Con nosotros, usted puede sentirse seguro y protegido. Un
-              principio importante de la empresa: respetar su tiempo y respetar
-              los plazos acordados.
-            </p>
-          </li>
-          <li class="detailed-list">
-            <h3 class="eigth intermediate">Planificacion</h3>
-            <p class="paragraph-three middle-text">
-              Usted podrá observar y participar en cada fase del desarrollo y
-              aplicación de soluciones.
-            </p>
-          </li>
-          <li class="detailed-list-one">
-            <h3 class="nine intermediate">Tecnologia moderna</h3>
-            <p class="paragraph-four middle-text">
-              Usamos herramientas innovadoras para resolver las tareas
-              asignadas. Es hora de simplificar los procesos laborales.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!--Seccion de primeras imagenes-->
-      <section class="container-img">
-        <h2 class="profession section-title">A qué nos dedicamos</h2>
-        <ul class="img-two">
-          <li class="image-one">
-            <img class="detail" src="images/image1.jpg" alt="image1" width="374" />
-          </li>
-          <li class="image-two">
-            <img class="detail-one" src="images/image2.jpg" alt="image2" width="374" />
-          </li>
-          <li class="image-three">
-            <img class="detail" src="images/image3.jpg" alt="image3" width="374" />
-          </li>
-        </ul>
-      </section>
-      <!--Equipo de trabajo-->
-      <section class="container-down">
-        <h2 class="team section-title">Nuestro Equipo</h2>
-        <ul class="border">
-          <li class="section-img">
-            <img class="img-profession" src="images/image4.jpg" alt="image4" width="270" />
-            <h3 class="professional ">Andres Cubo</h3>
-            <p class="position">Diseñador De Productos</p>
-          </li>
-          <li class="section-img">
-            <img class="img-profession-two" src="images/image5.jpg" alt="imagen5" width="270" />
-            <h3 class="professional">Carla Palacio</h3>
-            <p class="position">Desarroladora Frontend</p>
-          </li>
-          <li class="section-img">
-            <img class="img-profession-three" src="images/image6.jpg" alt="image6" width="270" />
-            <h3 class="professional">Mario Dorado</h3>
-            <p class="position">Marketing</p>
-          </li>
-          <li class="section-img-one">
-            <img class="img-profession-four" src="images/image7.jpg" alt="image7" width="270" />
-            <h3 class="professional">Pablo Mijangos</h3>
-            <p class="position">Diseñador IU</p>
-          </li>
-        </ul>
-      </section>
-    </div>
+        <section class="detail-two">
+          <ul>
+            <li class="detailed-list">
+              <h3 class="six intermediate">Atencion a los detalles</h3>
+              <p class="paragraph middle-text">
+                Nos adentramos en todos los detalles y procesos de su negocio,
+                para así desarrollar una solución a su medida.
+              </p>
+            </li>
+            <li class="detailed-list">
+              <h3 class="seven intermediate">Puntualidad</h3>
+              <p class="paragraph-two middle-text">
+                Con nosotros, usted puede sentirse seguro y protegido. Un
+                principio importante de la empresa: respetar su tiempo y
+                respetar los plazos acordados.
+              </p>
+            </li>
+            <li class="detailed-list">
+              <h3 class="eigth intermediate">Planificacion</h3>
+              <p class="paragraph-three middle-text">
+                Usted podrá observar y participar en cada fase del desarrollo y
+                aplicación de soluciones.
+              </p>
+            </li>
+            <li class="detailed-list-one">
+              <h3 class="nine intermediate">Tecnologia moderna</h3>
+              <p class="paragraph-four middle-text">
+                Usamos herramientas innovadoras para resolver las tareas
+                asignadas. Es hora de simplificar los procesos laborales.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!--Seccion de primeras imagenes-->
+        <section class="container-img">
+          <h2 class="profession section-title">A qué nos dedicamos</h2>
+          <ul class="img-two">
+            <li class="image-one">
+              <img
+                class="detail"
+                src="images/image1.jpg"
+                alt="image1"
+                width="374"
+              />
+            </li>
+            <li class="image-two">
+              <img
+                class="detail-one"
+                src="images/image2.jpg"
+                alt="image2"
+                width="374"
+              />
+            </li>
+            <li class="image-three">
+              <img
+                class="detail"
+                src="images/image3.jpg"
+                alt="image3"
+                width="374"
+              />
+            </li>
+          </ul>
+        </section>
+        <!--Equipo de trabajo-->
+        <section class="container-down">
+          <h2 class="team section-title">Nuestro Equipo</h2>
+          <ul class="border">
+            <li class="section-img">
+              <img
+                class="img-profession"
+                src="images/image4.jpg"
+                alt="image4"
+                width="270"
+              />
+              <h3 class="professional">Andres Cubo</h3>
+              <p class="position">Diseñador De Productos</p>
+            </li>
+            <li class="section-img">
+              <img
+                class="img-profession-two"
+                src="images/image5.jpg"
+                alt="imagen5"
+                width="270"
+              />
+              <h3 class="professional">Carla Palacio</h3>
+              <p class="position">Desarroladora Frontend</p>
+            </li>
+            <li class="section-img">
+              <img
+                class="img-profession-three"
+                src="images/image6.jpg"
+                alt="image6"
+                width="270"
+              />
+              <h3 class="professional">Mario Dorado</h3>
+              <p class="position">Marketing</p>
+            </li>
+            <li class="section-img-one">
+              <img
+                class="img-profession-four"
+                src="images/image7.jpg"
+                alt="image7"
+                width="270"
+              />
+              <h3 class="professional">Pablo Mijangos</h3>
+              <p class="position">Diseñador IU</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <!--Parte inferior-->
     <footer>
@@ -175,6 +211,5 @@
         </ul>
       </address>
     </footer>
-  </div>
   </body>
 </html>

@@ -16,8 +16,8 @@
 
 .container{
     width: 1200px;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
@@ -32,68 +32,40 @@ body{
 
 .navigation{
     display: flex;
-    padding-left: 15px;
+    gap: 90px;
 }
 
 .first{
     background: #FFFFFF;
-    height: 80px;
-    display: flex;
     border-bottom: 1px solid #ECECEC;
 }
 
-.one{
-    position: absolute;
-    width: 49px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
+.menu-submenu{
+    display: flex;
+    gap: 50px;
+    align-items: center;
 }
 
-.two{
-    position: absolute;
-    width: 65px;
-    height: 16px;
-    left: 552px;
-    top: 32px;
+.information{
+    display: flex;
+    gap: 50px;
+    align-items: center;
 }
 
-.three{
-    position: absolute;
-    width: 67px;
-    height: 16px;
-    left: 667px;
-    top: 32px;
+.header-container{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.four{
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1000px;
-    top: 32px;
-}
-
-.five{
-    position: absolute;
-    width: 118px;
-    height: 16px;
-    left: 1150px;
-    top: 32px;
-}
 
 .title{
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.17;
-    width: 145px;
     color:var(--brand-color);
     font-weight: 700;
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
     text-align: right;
     letter-spacing: 0.03em;
 }
@@ -109,10 +81,12 @@ li{
 
 .container-central{
     display: flex;
-    width: 1200px;
     height: 600px;
-    left: -4px;
-    top: 80px;
+    width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 /*Menu de los dos html*/
@@ -150,12 +124,8 @@ img{
     line-height: 1.3;
     color: var(--brand-white);
     font-weight: 700;
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 448px;
-    top: 280px;
     text-align: center;
+    width: 700;
 }
 
 .head-button{
@@ -164,14 +134,9 @@ img{
     font-size: var(--font-set);
     line-height: 1.8;
     font-weight: 700;
-    width: 261px;
-    height: 50px;
     background-color:var(--brand-pagina);
     cursor: pointer;
     font-weight: var(--font-h3);
-    position: absolute;
-    left: 666px;
-    top: 460px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -197,13 +162,9 @@ img{
     padding: 0px;
 }
 
-ul{
-    list-style-type: disc;
-    margin-block-start: 1;
-    margin-block-end: 1;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+ul .h1 .h2 .h3 .h4{
+    padding: 0;
+    margin: 0;
 }
 
 .detailed-list{
@@ -211,8 +172,6 @@ ul{
 }
 
 .detailed-list-one{
-    width: 373.16px;
-    height: 323.7px;
     margin-left: 30.26px;
     margin-right: 23.42px;
 }
@@ -234,8 +193,6 @@ ul{
     font-family:var(--font-family);
     margin-right: 9px;
     padding: 0px;
-    width: 145px;
-    height: 38px;
     margin-right: 9px;
     font-style: normal;
     font-size: var(--font-set);
@@ -275,8 +232,6 @@ ul{
     background-color:var(--brand-color);
     font-family:var(--font-family);
     color: var(--brand-white);
-    width: 73px;
-    height: 38px;
     margin-right: 9px;
     font-size: var(--font-set);
     line-height: 1.62;
@@ -301,8 +256,6 @@ ul{
 }
 
 .details-img{
-    width: 370px;
-    height: 404px;
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
@@ -402,7 +355,6 @@ ul{
     line-height: 1.7;
     color:var(--brand-info);
     font-weight:var(--font--Weight);
-    width: 270px;
     margin: auto;
     font-size: 14px;
     line-height: 1.71;
@@ -445,8 +397,6 @@ ul{
 }
 
 .detail{
-    width: 373.16px;
-    height: 323.7px;
 }
 
 .detail-two ul{
@@ -458,8 +408,6 @@ ul{
 
 
 .detail-one{
-    width: 373.16px;
-    height: 323.7px;
     margin-left: 30.26px;
     margin-right: 23.42px;
 }
@@ -518,25 +466,17 @@ ul{
 
 .img-profession{
     border-radius: 0px;
-    width: 270px;
-    height: 260px;
 }
 
 .img-profession-two{
     border-radius: 0px;
-    width: 270px;
-    height: 260px;
 }
 
 .img-profession-three{
-    width: 270px;
-    height: 260px;
 }
 
 .img-profession-four{
     border-radius: 0px;
-    width: 270px;
-    height: 260px;
 }
 
 .professional{
