@@ -82,7 +82,6 @@ li{
 .container-central{
     display: flex;
     height: 600px;
-    width: 700px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -125,7 +124,7 @@ img{
     color: var(--brand-white);
     font-weight: 700;
     text-align: center;
-    width: 700;
+    width: 700px;
 }
 
 .head-button{
@@ -139,27 +138,30 @@ img{
     font-weight: var(--font-h3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 32px;
+    gap: 10px;
 }
 
 .head-button:hover{
-    position: absolute;
     color: var(--brand-white);
     font-family:var(--font-family);
     font-size: var(--font-set);
     line-height: 1.8;
     background-color:var(--brand-color);
+    align-items: center;
+    padding: 10px 32px;
 }
 
 .detail-two{
-    padding: 0px;
-    margin: 0 auto;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .detail-two ul{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    padding: 0px;
+    gap: 30px;
+    list-style: none;
 }
 
 ul .h1 .h2 .h3 .h4{
@@ -169,11 +171,7 @@ ul .h1 .h2 .h3 .h4{
 
 .detailed-list{
     margin-right: 30px;
-}
-
-.detailed-list-one{
-    margin-left: 30.26px;
-    margin-right: 23.42px;
+    flex-basis:  calc((100% -3 * 30px ) / 4)
 }
 
 /*Botones de portafolio*/
@@ -253,6 +251,9 @@ ul .h1 .h2 .h3 .h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-grow: 0;
+    gap: 10px;
+    flex-basis: calc((100% -2 * 10px ) / 3)
 }
 
 .details-img{
@@ -275,79 +276,6 @@ ul .h1 .h2 .h3 .h4{
     line-height: 1.428;
     letter-spacing: 0.03;
     text-transform: uppercase;
-    margin: 0 auto;
-}
-
-.six{
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 215px;
-    top: 775px;
-}
-
-.paragraph{
-    position: absolute;
-    width: 270px;
-    height: 75px;
-    left: 215px;
-    top: 801px;
-}
-
-.seven{
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 515px;
-    top: 775px;
-}
-
-.paragraph-two{
-    position: absolute;
-    width: 270px;
-    height: 96px;
-    left: 515px;
-    top: 801px;
-}
-
-.eigth{
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 815px;
-    top: 775px;
-}
-
-.paragraph-three{
-    position: absolute;
-    width: 270px;
-    height: 75px;
-    left: 815px;
-    top: 801px;
-}
-
-.nine{
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 1115px;
-    top: 775px;
-}
-
-.paragraph-four{
-    position: absolute;
-    width: 270px;
-    height: 75px;
-    left: 1115px;
-    top: 801px;
-}
-
-.profession{
-    position: absolute;
-    width: 371.15px;
-    height: 46.24px;
-    left: 619.43px;
-    top: 991px;
 }
 
 .middle-text{
@@ -355,7 +283,6 @@ ul .h1 .h2 .h3 .h4{
     line-height: 1.7;
     color:var(--brand-info);
     font-weight:var(--font--Weight);
-    margin: auto;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03;
@@ -372,111 +299,61 @@ ul .h1 .h2 .h3 .h4{
     letter-spacing: 0.06;
 }
 
-/*Seccion Tres imagenes*/
+/*Seccion de primeras imagenes Tres imagenes*/
 
 .section-title{
     font-size: 36px;
     line-height: 1.17;
     color:var(--brand-menu);
     font-weight: var(--font-h3);
+    text-align: center;
 }
 
-.container-img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
+.three{
+    background-color: var(--brand-white);
 }
 
-.img-two{
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-}
-
-.detail{
-}
-
-.detail-two ul{
+.container-img ul{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    padding: 0px;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
 }
 
+.image-one{
+    flex-basis: calc((100% -2 * 10px ) / 3)
+}
 
-.detail-one{
-    margin-left: 30.26px;
-    margin-right: 23.42px;
+.profession{
+    font-weight: 700;
 }
 
 
 /*Seccion Cuarta baja*/
 
-.intermediate-divider{
-    margin: 0 auto;
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-
-.container-down {
-    background-color:var(--brand-pagina); 
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-
-
 .team{
-    margin: auto;
-    padding-bottom: 50px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.166;
-    text-align: center;
-    letter-spacing: 0.03;
-    }
+    background-color:var(--brand-pagina); 
+}
 
-.border{
+.container-down ul{
     display: flex;
-    margin: auto;
-    padding: 0px;
-    background: var(--brand-pagina);
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.container-down{
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .section-img{
-    background: #FFFFFF;
+    background: var(--brand-white);
     margin-right: 30px;
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
-
-.section-img-one{
-    background: #FFFFFF;
-    margin-right: 30px;
-    padding-bottom: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.img-profession{
-    border-radius: 0px;
-}
-
-.img-profession-two{
-    border-radius: 0px;
-}
-
-.img-profession-three{
-}
-
-.img-profession-four{
-    border-radius: 0px;
 }
 
 .professional{
